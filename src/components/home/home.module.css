@@ -1,0 +1,68 @@
+.home {
+  background-color: var(--bg-1);
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+.home__title {
+  text-align: center;
+  color: #98faec;
+  /* BG text-U */
+  font-family: Ubuntu;
+  font-size: 117px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 134px; /* 114.53% */
+  text-transform: capitalize;
+  margin-bottom: 64px;
+}
+
+.home__container {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 128px;
+  /* margin-right: 128px;*/
+}
+
+.home__container1 {
+  width: 745px;
+}
+
+.home__box {
+  margin-bottom: 32px;
+}
+
+.home__position {
+  font-family: Ubuntu;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px; /* 112.5% */
+  text-transform: capitalize;
+}
+
+.home__contact {
+  font-family: IBM Plex Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  width: 697px;
+}
+
+.home__talk {
+  display: flex;
+  margin-top: 16px;
+  gap: 16px;
+  padding-left: 24px;
+}
+
+.home__talk_span {
+  color: var(--brand-1);
+  font-family: IBM Plex Mono;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px; /* 131.25% */
+  text-transform: capitalize;
+}

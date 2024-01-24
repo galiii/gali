@@ -1,0 +1,9 @@
+.profile__icon-item {
+  display: flex;
+  gap: 16px;
+  font-family: IBM Plex Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}

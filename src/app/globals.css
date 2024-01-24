@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #222; /* Darker background */
+  --text-color: #fff; /* White text */
+  --mobile-width: 768px; /* Adjusted mobile breakpoint */
+  --tablet-width: 1200px; /* Adjusted tablet breakpoint */
+  --bg-1: #292f36;
+  --bg-2: #1a1e23;
+  --color: #fff;
+  --brand-2: #98faec;
+  --brand-1: #12f7d6;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: local("IBM Plex Mono"), local("IBMPlexMono-Regular"),
+    url("/fonts/IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"), local("Ubuntu-Regular"),
+    url("/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* margin: auto 128px;*/
+  color: var(--color);
+  max-width: 1920px;
+}
+
+.profile__button {
+  display: flex;
+  margin-top: 32px;
+  background-color: var(--color);
+  color: var(--bg-1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  padding: 16px 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  align-self: flex-start;
+}
+
+.tag {
+  color: var(--brand-2);
+  font-family: IBM Plex Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}
+
+.color-brand1 {
+  color: var(--brand-1);
+}
+
+body {
+  background-color: var(--bg-1);
+}

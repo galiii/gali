@@ -1,0 +1,66 @@
+.about {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  padding: 128px;
+  display: grid;
+  /*background-color: var(--bg-1);*/
+  background: rgba(26, 30, 35, 0.5) url("../../assets/about/bgg.png") center
+    center / cover no-repeat;
+
+  background-size: cover;
+  position: relative;
+}
+
+.about__title {
+  font-family: Ubuntu;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px; /* 112.5% */
+  text-transform: capitalize;
+  width: 367px;
+  border-radius: 40px 0px;
+  border: 4px solid var(--Brand-1, #12f7d6);
+  background: var(--BG-1, #292f36);
+  margin-bottom: 46px;
+  text-align: center;
+
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.about__container {
+  padding: 24px 40px;
+  width: 800px;
+  grid-column-start: 1;
+
+  grid-row-start: 3;
+
+  background-color: var(--bg-1);
+  border-radius: 40px;
+  height: 377px;
+}
+.about__image {
+  grid-column-start: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.about__subtitle {
+  font-family: "IBM Plex Mono";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px; /* 131.25% */
+  text-transform: capitalize;
+  color: var(--brand-1);
+}
+
+.about__text {
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 15px;
+}

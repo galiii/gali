@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+.footer__social_list {
+  display: flex;
+  gap: 32px;
+}
+
+.footer__social_item {
+  padding: 8px;
+  border-radius: 48px;
+  background-color: var(--brand-2);
+}
