@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <main className='main'>
       <Home />
-      <About />
+      <About subtitle="Subtitle" text="text" />
       <Skills />
 
       <Contact />
