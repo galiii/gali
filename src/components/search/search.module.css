@@ -1,0 +1,15 @@
+.search {
+  margin: 0 64px;
+  position: relative;
+}
+
+.search__input {
+  padding: 6px 16px 6px 16px;
+  border-radius: 24px;
+}
+
+.search__btn {
+  position: absolute;
+  right: 17px;
+  top: 6.5px;
+}

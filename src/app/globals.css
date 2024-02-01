@@ -70,4 +70,5 @@
 
 body {
   background-color: var(--bg-1);
+  color: var(--color);
 }

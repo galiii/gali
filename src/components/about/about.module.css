@@ -11,6 +11,14 @@
   position: relative;
 }
 
+@media (max-width: 1280px) {
+  .about {
+    grid-template-columns: 1fr; /* Set to a single column */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+}
+
 .about__title {
   font-family: Ubuntu;
   font-size: 64px;
@@ -33,17 +41,34 @@
   padding: 24px 40px;
   width: 800px;
   grid-column-start: 1;
-
   grid-row-start: 3;
-
   background-color: var(--bg-1);
   border-radius: 40px;
   height: 377px;
+}
+
+@media (max-width: 1280px) {
+  .about__container {
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
 }
 .about__image {
   grid-column-start: 3;
   grid-row-start: 3;
   grid-row-end: 3;
+}
+
+@media (max-width: 1280px) {
+  .about__image {
+    grid-column-start: 1;
+    /*grid-column-end: 3;*/
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin-top: 128px;
+  }
 }
 
 .about__subtitle {

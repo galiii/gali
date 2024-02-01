@@ -24,6 +24,15 @@
   /* margin-right: 128px;*/
 }
 
+@media (max-width: 1280px) {
+  .home__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+  }
+}
+
 .home__container1 {
   width: 745px;
 }
