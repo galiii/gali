@@ -19,6 +19,13 @@
   }
 }
 
+@media (max-width: 768px) {
+  .about {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
 .about__title {
   font-family: Ubuntu;
   font-size: 64px;

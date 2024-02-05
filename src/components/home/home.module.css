@@ -4,6 +4,13 @@
   padding-right: 128px;
 }
 
+@media (max-width: 1280px) {
+  .home {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
 .home__title {
   text-align: center;
   color: #98faec;

@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from "./home.module.css";
 import Profile from '../profile/profile';
@@ -19,11 +19,27 @@ const TalkSection = () => {
 };
 
 export default function Home() {
+    const [isWideScreen, setIsWideScreen] = useState<boolean>(true);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsWideScreen(window.innerWidth <= 768);
+        };
+
+        console.log("home", window.innerWidth)
+        // Initial call to set the initial width
+        handleResize();
+
+        // Event listener for window resize
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <section className={styles.home}>
-            <h1 className={styles.home__title}>
-                developer
-            </h1>
+            <h1 className={styles.home__title}>{"Developer"}</h1>
             <div className={styles.home__container}>
                 <Profile />
                 <div className={styles.home__container1}>

@@ -6,6 +6,17 @@
   padding-right: 128px;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    padding-left: 64px;
+    padding-right: 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
 .footer__social_list {
   display: flex;
   gap: 32px;

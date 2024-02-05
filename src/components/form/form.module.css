@@ -6,6 +6,11 @@
   padding-bottom: 64px;
 }
 
+@media (max-width: 768px) {
+  .form {
+  }
+}
+
 .form__label {
   font-family: "Ubuntu";
   display: flex;

@@ -24,9 +24,10 @@ function SocialLinkItem({ href, image, alt }: SocialLink): React.ReactElement {
     const [isWideScreen, setIsWideScreen] = useState<boolean>(true);
     useEffect(() => {
         const handleResize = () => {
-            setIsWideScreen(window.innerWidth >= 1385);
+            setIsWideScreen(window.innerWidth >= 1441);
         };
 
+        console.log("in", window.innerWidth)
         // Initial call to set the initial width
         handleResize();
 
