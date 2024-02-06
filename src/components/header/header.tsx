@@ -21,10 +21,13 @@ const socialLinks: SocialLink[] = [
 ];
 
 function SocialLinkItem({ href, image, alt }: SocialLink): React.ReactElement {
+    //states
     const [isWideScreen, setIsWideScreen] = useState<boolean>(true);
+
     useEffect(() => {
         const handleResize = () => {
             setIsWideScreen(window.innerWidth >= 1441);
+
         };
 
         console.log("in", window.innerWidth)
@@ -39,6 +42,7 @@ function SocialLinkItem({ href, image, alt }: SocialLink): React.ReactElement {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+    //render
     return (
         <li className={style.footer__social_item}>
             <Link href={href}>
@@ -51,6 +55,28 @@ function SocialLinkItem({ href, image, alt }: SocialLink): React.ReactElement {
 }
 
 export default function Header() {
+    const [isWideScreenSocialLinks, setIsWideScreenSocialLinks] = useState<boolean>(true);
+
+    useEffect(() => {
+        const handleResize = () => {
+
+            setIsWideScreenSocialLinks(window.innerWidth >= 710)
+        };
+
+        console.log("in", window.innerWidth)
+        // Initial call to set the initial width
+        handleResize();
+
+        // Event listener for window resize
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
     return (
         <header className={style.header}>
 
@@ -69,11 +95,12 @@ export default function Header() {
 
                     <Search />
 
-                    <ul className={style.footer__social_list}>
-                        {socialLinks.map((link, index) => (
-                            <SocialLinkItem key={index} {...link} />
-                        ))}
-                    </ul>
+                    {
+                        isWideScreenSocialLinks && <ul className={style.footer__social_list}>
+                            {socialLinks.map((link, index) => (
+                                <SocialLinkItem key={index} {...link} />
+                            ))}
+                        </ul>}
                 </div>
             </nav>
 
