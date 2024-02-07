@@ -72,13 +72,13 @@
 
 @media (max-width: 920px) {
   .about__container {
-    width: 640px;
+    width: 540px;
   }
 }
 
 @media (max-width: 620px) {
   .about__container {
-    width: 440px;
+    width: 340px;
   }
 }
 
@@ -95,6 +95,12 @@
     grid-row-start: 4;
     grid-row-end: 4;
     margin-top: 128px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about__image {
+    margin-top: 64px;
   }
 }
 

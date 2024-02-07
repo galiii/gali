@@ -8,7 +8,7 @@ import mail from "@/assets/home/icon-mail-color.svg";
 const TalkSection = () => {
     return (
         <div className={styles.home__talk}>
-            <span className={styles.home__talk_span}>let’s talk</span>
+            <span className={styles.home__talk_span}>{"let’s talk"}</span>
             <button>
                 <Image src={mail} alt="mail" height={24} width={24} />
             </button>
@@ -50,7 +50,7 @@ export default function Home() {
                                 {"Gali"}
                                 <br></br>
                             </span>
-                            Full-stack developer{" "}
+                            {"Full-stack developer "}
                         </h4>
                         <span className="tag">{"</h1>"}</span>
                         <br></br>

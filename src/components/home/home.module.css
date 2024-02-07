@@ -52,6 +52,15 @@
   }
 }
 
+@media (max-width: 500px) {
+  .home__container1 {
+    max-width: 490px;
+    padding-left: 64px;
+    padding-right: 32px;
+    /*background-color: pink;*/
+  }
+}
+
 .home__box {
   margin-bottom: 32px;
 }
@@ -83,7 +92,7 @@
 
 @media (max-width: 726px) {
   .home__contact {
-    width: 400px;
+    width: 300px;
   }
 }
 

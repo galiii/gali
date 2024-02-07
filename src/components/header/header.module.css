@@ -11,6 +11,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .header {
+    padding: 32px;
+  }
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -28,6 +34,11 @@
 @media (max-width: 940px) {
   .header__name-container {
     font-size: 28px;
+  }
+}
+@media (max-width: 500px) {
+  .header__name-container {
+    font-size: 16px;
   }
 }
 
@@ -81,5 +92,11 @@
     font-size: 18px;
     align-self: center;
     gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__pages-link {
+    font-size: 16px;
   }
 }

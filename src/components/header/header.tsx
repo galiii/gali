@@ -83,7 +83,7 @@ export default function Header() {
             <nav className={style.header__container}>
                 <div className={style["header__name-container"]}>
                     <div className={style.header__tag}>{"<C/>"}</div>
-                    <div className={style.header__name}>GaliBrill</div>
+                    <div className={style.header__name}>{"GaliBrill"}</div>
                 </div>
 
 
